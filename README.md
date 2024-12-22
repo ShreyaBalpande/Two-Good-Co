@@ -33,21 +33,26 @@ Make sure you have the following installed:
 
 # Steps
 
-* Clone the repository:- git clone https://github.com/ShreyaBalpande/two-good-co.git
+1. Clone the repository:- git clone https://github.com/ShreyaBalpande/two-good-co.git
 
-* Navigate to the project folder:- cd two-good-co
+2. Navigate to the project folder:- cd two-good-co
 
-* Open index.html in your browser to view the website.
+3. Open index.html in your browser to view the website.
 
 
 # File Structure :-
   
   Two Good Co/
 ├── index.html       # Main HTML file
+
 ├── style.css        # Stylesheet for the website
+
 ├── scripts.js       # JavaScript for animations and interactivity
+
 ├── video.mp4        # Background video for the first section
+
 ├── README.md        # Project documentation
+
 └── assets/          # Images and other assets
 
 # Animations :-
