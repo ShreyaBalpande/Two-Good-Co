@@ -43,17 +43,18 @@ Make sure you have the following installed:
 # File Structure :-
   
   Two Good Co/
-├── index.html       # Main HTML file
+  
+├── index.html                     # Main HTML file
 
-├── style.css        # Stylesheet for the website
+├── style.css                      # Stylesheet for the website
 
-├── scripts.js       # JavaScript for animations and interactivity
+├── scripts.js                     # JavaScript for animations and interactivity
 
-├── video.mp4        # Background video for the first section
+├── video.mp4                      # Background video for the first section
 
-├── README.md        # Project documentation
+├── README.md                      # Project documentation
 
-└── assets/          # Images and other assets
+└── assets/                        # Images and other assets
 
 # Animations :-
 
