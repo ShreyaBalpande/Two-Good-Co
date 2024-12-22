@@ -3,8 +3,7 @@
 Welcome to the Two Good Co project! This repository contains the code for a beautifully designed and interactive website built with HTML, CSS, and JavaScript, enhanced with modern animations and scrolling effects.
 
 # Features :-
-
-* Frontend:
+ Frontend:
 
 * HTML: Semantic structure and content layout.
 
