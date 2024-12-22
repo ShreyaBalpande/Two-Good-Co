@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#nav{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#nav-part1{
+    height: 82px;
+    overflow: hidden;
+}
+
+#nav-part1 svg{
+    display: block;
+}
+
+#nav #nav-part2{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+#nav-part2 #links a{
+     text-decoration: none;
+     color: black;;
+     font-size: small;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-right: 35px;
+}
+
+#nav-part2 #links a:hover{
+    text-decoration: underline;
+    color: rgb(95, 95, 95);
+}
+
+#nav-part2 #icons{
+    display: flex;
+    align-items: flex-start;
+    gap: 4.5vw;
+    margin-right: 15px;
+}
+
+#cursor{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(253, 242, 225);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 0 1.5vw;
+    padding-top: 37vh;
+}
+
+#page1 h1{
+    font-size: 15.8vw;
+    font-family: futura;
+    line-height: 13.5vw;
+    letter-spacing: -8px;
+    text-transform: uppercase;
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 3vw;
+    position: relative;
+}
+
+#video-container video{
+    height:100% ;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1.5vw;
+    justify-content: space-between;
+}
+
+#page2 .elem{
+    height: 100%;
+    width: 32%; 
+    overflow: hidden;
+    position: relative;
+}
+
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2 .elem .dets{
+    height: 45px;
+    width: 74%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff6de;
+}
+
+#page2 .elem #detsi{
+    background-color: #8aaad6;
+} 
+
+#page2 .dets h5{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(36, 35, 35);
+    gap: 40px;
+    font-family: futura;
+}
+
+
+#page3{
+    min-height: 200vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#page3 #innerpage {
+    height: 70vh;
+    width: 100%;
+    font-family: futura;
+    display: flex;
+}
+
+#page3 #innerpage h1{
+    height: 60vh;
+    width: 100vw;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 55px;
+    text-transform: uppercase;
+    line-height: 9vh;
+}
+
+#page3 #innerpage h4{
+    height: 65vh ;
+    width: 50vw;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 40px;
+    line-height: 1.8vw;
+}
+
+.child{
+    height: 100%;
+    width: 50vw;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.child img{
+    height: 100%;
+    width: 40vw;
+    margin-top: 60px;
+}
+
+@media (max-width:600px) {
+    
+    #page1{
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 30vh;
+    }
+
+    #page1 h1{
+        font-size: 15.5vw;
+        line-height: 14vw;
+        letter-spacing: -3px;
+    }
+
+    #video-container{
+        height: 35vh;
+        margin-top: 3vw;
+    }
+
+    #page2{
+        min-height: 50vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0vw 3vw;
+        flex-direction: column;
+    }
+
+    #page2 .elem{
+        height: 100%;
+        width: 100%;  
+        margin-bottom: 4vw;
+        overflow: hidden;    
+    }
+
+    #page2 .elem img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #page2 .elem .dets{
+        height: 45px;
+        width: 74%;
+        border-radius: 50px;
+        position: absolute;
+        background-color: #fff6de;
+    }
+    
+    #page2 .elem #detsi{
+        background-color: #8aaad6;
+    }
+    
+
+    #page3{
+        min-height: 120vh;
+        width: 100%;
+    }
+    
+    #page3 #innerpage {
+        min-height: 120vh;
+        font-family: futura;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #page3 #innerpage h1{
+        min-height: 55vh;
+        width: 100%;
+        padding-top: 40px;
+        font-size: 50px;
+        text-transform: uppercase;
+        line-height: 9vh;
+    }
+    
+    #page3 #innerpage h4{
+        width: 100%;
+        margin-top: 20px;
+        line-height: 5vw;
+    }
+    
+    .child{
+        height: 100%;
+        width: 50vw;
+    }
+    
+    .child img{
+        height: 100%;
+        width: 40vw;
+        margin-top: 60px;
+    }
+}
